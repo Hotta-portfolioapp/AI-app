@@ -4,7 +4,7 @@ AIの生成ノウハウを売買して共有できるアプリ
 
 ---
 
-# アプリ URL / GitHub リポジトリ
+# アプリ URL / GitHub リポジトリURL
 
 - アプリURL: [https://ai-app-5rve.onrender.com](https://ai-app-5rve.onrender.com)  
 - GitHubリポジトリ: [https://github.com/Hotta-portfolioapp/AI-app.git](https://github.com/Hotta-portfolioapp/AI-app.git)
