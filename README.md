@@ -16,7 +16,7 @@
 
 ---
 
-# アプリ URL / GitHub リポジトリURL
+##  アプリ URL / GitHub リポジトリURL
 
 - アプリURL: [https://ai-app-5rve.onrender.com](https://ai-app-5rve.onrender.com)  
 - GitHubリポジトリ: [https://github.com/Hotta-portfolioapp/AI-app.git](https://github.com/Hotta-portfolioapp/AI-app.git)
