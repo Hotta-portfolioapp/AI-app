@@ -6,8 +6,8 @@ AIの生成ノウハウを売買して共有できるアプリ
 
 # アプリ URL / GitHub リポジトリ
 
-- アプリURL: [https://taskmanager.example.com](https://taskmanager.example.com)  
-- GitHubリポジトリ: [https://github.com/username/taskmanager](https://github.com/username/taskmanager)
+- アプリURL: [https://ai-app-5rve.onrender.com](https://ai-app-5rve.onrender.com)  
+- GitHubリポジトリ: [https://github.com/Hotta-portfolioapp/AI-app.git](https://github.com/Hotta-portfolioapp/AI-app.git)
 
 ---
 
@@ -27,7 +27,6 @@ AIの生成ノウハウを売買して共有できるアプリ
 - チャット機能 (ActionCable使用)
 
 ![機能説明](./app/assets/images/Feature%20Description/Feature%20Description.png)
-
 ---
 
 ## 技術スタック
@@ -48,14 +47,14 @@ AIの生成ノウハウを売買して共有できるアプリ
 
 アプリのデータベース構造を示します。
 
-![ER図](./app/assets/images/README_image/Entity%20Relationship%20Diagram.png)
+![ER図](./screenshots/er_diagram.png)
 
 ### 補足
-- users テーブル: アプリ利用者情報
-- knowhows テーブル: 投稿されたコンテンツ情報
-- instructions テーブル: コンテンツ(生成ノウハウ)の生成手順情報
-- payments テーブル:　決済用カード情報
-
+- `users` テーブル: アプリ利用者情報
+- `tasks` テーブル: ユーザーのタスク情報（user_id が外部キー）
+- `categories` テーブル: タスクのカテゴリ
+- 1人のユーザーは複数のタスクを持つ (1:N)
+- タスクは 1 つのカテゴリに所属 (N:1)
 
 ---
 
@@ -64,5 +63,6 @@ AIの生成ノウハウを売買して共有できるアプリ
 - フルスタック開発（フロント・バックエンド）の理解を深めた
 - 認証・CRUD操作・API連携の基礎を経験
 - 今後の改善点：
-  - DRYを意識したコード設計(現状が冗長的で生産的でない)
-  - 本番環境のみ(Render)、チャット送信直後に、チャット一覧にメッセージが表示されずリロードしないと反映されないためため、改善を図る
+  - テストコードの追加（RSpec / Jest）
+  - UI/UX改善（ドラッグ＆ドロップでタスク順番変更など）
+  - CI/CD の導入
