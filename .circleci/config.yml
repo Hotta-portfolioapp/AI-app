@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   rubocop:
     docker:
-      - image: cimg/ruby:3.3.0
+      - image: cimg/ruby:3.3.3
     steps:
       - checkout
 
@@ -32,10 +32,10 @@ jobs:
 
   rspec:
     docker:
-      - image: cimg/ruby:3.3.0
+      - image: cimg/ruby:3.3.3
         environment:
           RAILS_ENV: test
-      - image: cimg/postgres:14.10
+      - image: cimg/postgres:15.0
         name: db
         environment:
           POSTGRES_USER: postgres

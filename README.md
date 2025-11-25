@@ -1,6 +1,18 @@
-# 概要
+## AI生成ノウハウ売買プラットフォーム
 
-AIの生成ノウハウを売買して共有できるアプリ
+最新のAI生成ノウハウを、投稿者に直接質問しながら入手できるプラットフォームです。  
+
+**ターゲット**  
+- AIの具体的な活用法を学びたいビジネスパーソン  
+- AIを活用して制作や業務を効率化したいクリエイター  
+
+**できること**  
+- 投稿者が作った最新のAI生成ノウハウのパッケージを購入できる  
+- 投稿者に直接質問して疑問を解消できる  
+
+**購入者メリット**  
+- 機械の扱いが苦手な方や忙しい方でも効率的に学習可能  
+- チャットで質問・相談できるため、実務や制作で使える具体的手法を確実に落とし込める
 
 ---
 
@@ -9,13 +21,6 @@ AIの生成ノウハウを売買して共有できるアプリ
 - アプリURL: [https://ai-app-5rve.onrender.com](https://ai-app-5rve.onrender.com)  
 - GitHubリポジトリ: [https://github.com/Hotta-portfolioapp/AI-app.git](https://github.com/Hotta-portfolioapp/AI-app.git)
 
----
-
-## 作成目的
-
-- StripeやActioncableといった商用に関連性の高いRailsの機能を用いて、開発を学習するため
-- API通信やデータベース設計の理解を深めるため
-- rspecのテスト構造の理解を深めるため
 ---
 
 ## 主な機能
@@ -32,14 +37,14 @@ AIの生成ノウハウを売買して共有できるアプリ
 
 ## 技術スタック
 
-- Rails 8 アプリ
-  - フロントエンド: JavaScript / Bootstrap / Turbo
-  - 認証: Devise
-- データベース: PostgreSQL
-- 開発環境: Docker Compose
+- バックエンド：Ruby 3.3.3(Rails 8.0)
+- フロントエンド: JavaScript / Bootstrap / Turbo
+- データベース: PostgreSQL 15
+- 開発環境: Docker
+- 認証: Devise
 - デプロイ: Render
-- CI/CD: GitHub Actions
-  - rubocop と rspec が pass したら自動で Render にデプロイ
+- CI/CD: Circl CI / GitHub Actions(Dependabot用)
+→ rubocop と rspec が pass したら自動で Render にデプロイ
 - 画像・動画管理: Cloudinary（本番環境のみ）
 
 ---
@@ -60,9 +65,12 @@ AIの生成ノウハウを売買して共有できるアプリ
 ---
 
 ## 学んだこと・今後の改善
+- StripeやActioncableといった商用に関連性の高いRailsの機能を学習できた
+- API通信やデータベース設計の理解を深めることができた
+- rspecのテスト構造の理解を深めることができた
 
-- フルスタック開発（フロント・バックエンド）の理解を深めた
-- 認証・CRUD操作・API連携の基礎を経験
 - 今後の改善点：
   - DRYを意識したコード設計(現状が冗長的で生産的でない)
   - 本番環境のみ(Render)、チャット送信直後に、チャット一覧にメッセージが表示されずリロードしないと反映されないためため、改善を図る
+  - チャットの通知機能の追加
+  - SP版の実装
