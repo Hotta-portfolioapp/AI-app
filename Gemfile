@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # --------------------
 # Rails本体と基本機能
 # --------------------
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.1.1"
 gem "propshaft"             # Modern asset pipeline
 gem "pg"        # PostgreSQL
 gem "puma", ">= 5.0"        # Webサーバ
