@@ -85,6 +85,7 @@ Rails.application.configure do
   config.assets.compile = false   # false が推奨（precompile必須）
   config.assets.digest = true     # true にしてハッシュ付きファイルを使用
   # config.active_job.queue_adapter = :inline
+  config.active_job.queue_adapter = :async
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com
