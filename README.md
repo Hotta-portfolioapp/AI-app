@@ -21,6 +21,7 @@
 - アプリURL: [https://ai-app-5rve.onrender.com](https://ai-app-5rve.onrender.com)  
 - GitHubリポジトリ: [https://github.com/Hotta-portfolioapp/AI-app.git](https://github.com/Hotta-portfolioapp/AI-app.git)
 
+
   - デモアカウント　※アプリ動作確認時にご利用ください。
     - 投稿者用アカウント（Seller）
       - メールアドレス：seller@gmail.com
@@ -29,7 +30,6 @@
     - 購入者用アカウント（Buyer）
       - メールアドレス：buyer@gmail.com
       - パスワード：000000
-
 ---
 
 ## 主な機能
